@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ mytitle }}</title>
-</head>
-<body>
+{% extends "mymaintemplate.html" %}
+
+{% block mycontent %}
 <h1>{{ mytitle }}</h1>
+{{ super() }}
 <h2>Look at these ships</h2>
 <ul>
     {% for ship in ships %}
     <li>{{ship.name}} - {{ship.crew}} - {{ship.weight}}</li>
     {% endfor %}
 </ul>
+{% endblock mycontent %}
 
-
-</body>
-</html>
+{% block title %} List of Spaceships{% endblock title %}
