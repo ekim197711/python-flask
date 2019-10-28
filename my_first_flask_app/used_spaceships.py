@@ -18,6 +18,22 @@ spaceships=[
 ]
 
 
+@used_spaceships_app.route('/welcome')
+def welcome():
+    return render_template("welcome.html", mytitle='Welcome')
+
+
+@used_spaceships_app.route('/spareparts')
+def myspareparts():
+    return render_template("spareparts.html",mytitle='Spareparts')
+
+
+@used_spaceships_app.route('/deliverytime')
+def current_deliverytime():
+    return render_template("deliverytime.html", mytitle='Deliverytime')
+
+
+
 @used_spaceships_app.route('/list')
 def listtheships():
     return render_template("listtheships.html",

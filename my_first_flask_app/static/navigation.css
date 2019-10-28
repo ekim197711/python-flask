@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+*{
+    background: black;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.2rem;
+}
+
+.logo img{
+    width: 120px;
+    border-radius: 30px;
+    filter: grayscale(100%);
+    transition: 0.3s ease-out;
+}
+.logo img:hover{
+    width: 140px;
+    border-radius: 10px;
+    filter: none;
+    transition: 0.3s ease-out;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a{
+    padding: 30px;
+    margin-right: 20px;
+    background: rgb(150,120,100);
+    transition: 0.3s ease-out;
+}
+
+.nav-links a:hover{
+    padding: 40px;
+    background: rgb(100,170,150);
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+
+
+.shopping_cart{
+    padding: 20px;
+    font-size: 1rem;
+    margin-right:20px;
+    margin-left:20px;
+    border-radius: 30px;
+    background: rgb(130,100,130);
+    transition: 0.3s ease-out 0s;
+}
+
+.shopping_cart:hover{
+    padding: 25px;
+    font-size: 1.1rem;
+    border-radius: 40px;
+    background: rgb(230,160,190);
+    transition: 0.3s ease-out 0s;
+
+}

@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %} {% endblock title %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='mystyles.css') }}"
+    <link rel="stylesheet" href="{{ url_for('static', filename='mystyles.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='navigation.css') }}"/>
 </head>
 <body>
-<div class="createdby">Made by Mike...</div>
+<header class="navbar">
+    <div class="logo">
+       <img src="{{ url_for('static', filename='mike_first_school_day.png') }}"/>
+    </div>
+    <div class="link-div">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('welcome') }}">Welcome</a></li>
+                <li><a href="{{ url_for('myspareparts') }}">Spareparts</a></li>
+                <li><a href="{{ url_for('listtheships') }}">Spaceships</a></li>
+                <li><a href="{{ url_for('current_deliverytime') }}">Delivery Time</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="shoppingcart-div">
+        <button class="shopping_cart">Shopping Cart</button>
+    </div>
+</header>
+
+
 <div class="content">
     {% block mycontent %}
     <div>Bla bla remember an umbrella when it rains!!!</div>
     {% endblock mycontent %}
 </div>
-</div>
-<h3>Have a nice day...</h3>
-
 
 </body>
 </html>
