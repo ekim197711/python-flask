@@ -18,6 +18,7 @@
                 <li><a href="{{ url_for('myspareparts') }}">Spareparts</a></li>
                 <li><a href="{{ url_for('listtheships') }}">Spaceships</a></li>
                 <li><a href="{{ url_for('current_deliverytime') }}">Delivery Time</a></li>
+                <li><a href="{{ url_for('newspaceship') }}">CREATE Spaceship</a></li>
             </ul>
         </nav>
     </div>
@@ -28,9 +29,11 @@
 
 
 <div class="content">
-    {% block mycontent %}
-    <div>Bla bla remember an umbrella when it rains!!!</div>
-    {% endblock mycontent %}
+    <div class="content-middle">
+        {% block mycontent %}
+        blabla bla
+        {% endblock mycontent %}
+    </div>
 </div>
 
 </body>

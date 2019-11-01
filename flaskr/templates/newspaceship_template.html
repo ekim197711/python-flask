@@ -1,0 +1,38 @@
+{% extends "mymaintemplate.html" %}
+
+{% block mycontent %}
+<h1>{{ mytitle }}</h1>
+Here is my form:
+<form method="POST", action="#">
+    {{ form.hidden_tag() }}
+    <div class="input-field">
+        {% for error in form.name.errors %}
+        <div class="showerror">{{ error }}</div>
+        {% endfor %}
+        {{ form.name.label }}
+        {{ form.name }}
+    </div>
+    <div class="input-field">
+        {% for error in form.crew.errors %}
+        <div class="showerror">{{ error }}</div>
+        {% endfor %}
+        {{ form.crew.label }}
+        {{ form.crew }}
+    </div>
+    <div class="input-field">
+        {% for error in form.weight.errors %}
+        <div class="showerror">{{ error }}</div>
+        {% endfor %}
+        {{ form.weight.label }}
+        {{ form.weight }}
+    </div>
+    {{ form.submit }}
+</form>
+
+{% endblock mycontent %}
+
+
+
+{% block title %}
+Create Spaceship
+{% endblock title %}
