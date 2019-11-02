@@ -1,0 +1,33 @@
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.formwrapper{
+    background: #4255ff;
+    box-shadow: 0.5rem 0.5rem 2px 2px #1d2a6b;
+    padding: 20px;
+}
+.formspaceship form{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.fielditem{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+}
+.fielditem label{
+    margin-bottom: 0.5rem;
+    color: #f4ff11;
+    font-size: 1.2rem;
+}
+
+.showerror{
+    color: #ff7133;
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: 10px;
+    background: #21758d;
+}

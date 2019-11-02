@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
-*{
-    background: black;
-    color: white;
-}
+
+
+
+
 
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Lobster Two', cursive;
     font-size: 1.2rem;
 }
 
@@ -27,6 +25,7 @@
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 .nav-links{
@@ -36,8 +35,9 @@ a{
 
 .nav-links a{
     padding: 30px;
-    margin-right: 20px;
-    background: rgb(150,120,100);
+    margin-right: 0px;
+    background: rgb(4, 73, 150);
+    /*border-radius: 5px;*/
     transition: 0.3s ease-out;
 }
 

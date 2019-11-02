@@ -5,6 +5,7 @@
     <title>{% block title %} {% endblock title %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='mystyles.css') }}"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='navigation.css') }}"/>
+    {% block extraheader %} {% endblock extraheader %}
 </head>
 <body>
 <header class="navbar">
@@ -23,7 +24,7 @@
         </nav>
     </div>
     <div class="shoppingcart-div">
-        <button class="shopping_cart">Shopping Cart</button>
+<!--        <button class="shopping_cart">Shopping Cart</button>-->
     </div>
 </header>
 
